@@ -1,0 +1,85 @@
+body {
+	color: rgb(251, 250, 248);
+	background-color: rgb(45, 45, 42);
+	font-family: 'Courier New', Courier, monospace;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header,
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#grid-container {
+	display: grid;
+	border: 5px solid rgb(25, 25, 22);
+	border-radius: 5px;
+}
+
+#grid-container button {
+	padding: 0;
+	border: none;
+	outline: none;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	cursor: pointer;
+}
+
+#grid-container button.empty {
+	background-color: rgb(251, 250, 248);
+	border: 1px solid rgb(241, 240, 238);
+}
+
+#grid-container button.block {
+	background-color: rgb(45, 45, 42);
+    border: 1px solid rgb(55, 55, 52);
+}
+
+#grid-container button.filled {
+	background-color: rgb(0, 120, 215);
+	border: 1px solid rgb(0, 110, 205);
+}
+
+#active-mode-label-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#controls {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#controls button {
+	background-color: rgb(55, 55, 52);
+	color: rgb(251, 250, 248);
+	font-family: 'Courier New', Courier, monospace;
+	border: 1px solid rgb(75, 75, 72);
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+#controls button:hover {
+	background-color: rgb(65, 65, 62);
+	border-color: rgb(95, 95, 90);
+}
+
+#controls button:disabled {
+	background-color: rgb(90, 85, 82);
+	color: rgb(180, 175, 170);
+	border-color: rgb(105, 100, 97);
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+#grid-size-container {
+	max-width: 250px;
+	display: flex;
+	align-items: center;
+}

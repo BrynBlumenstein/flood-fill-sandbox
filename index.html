@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Flood Fill Sandbox</title>
+		<meta
+			name="description"
+			content="A web application for visualizing flood fill with sandbox tools"
+		/>
+		<meta name="author" content="Bryn Blumenstein" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Flood Fill Sandbox</h1>
+		</header>
+		<main>
+			<div id="grid-container"></div>
+
+			<div id="active-mode-label-wrapper">
+				<span id="active-mode-label"
+					>Active Mode:
+					<span id="active-mode">None</span></span
+				>
+			</div>
+			<div id="controls">
+				<button id="fill-area">Fill Area</button>
+				<button id="edit-blocks">Edit Blocks</button>
+				<button id="randomize-grid">Randomize Grid</button>
+				<button id="clear-grid">Clear Grid</button>
+				<div id="grid-size-container">
+					<label for="grid-size-input"
+						>Grid Size:
+						<span id="grid-size">15</span></label
+					>
+					<input
+						type="range"
+						id="grid-size-input"
+						min="15"
+						max="65"
+						value="11"
+						step="2"
+					/>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>&copy;&nbsp;Bryn Blumenstein</p>
+		</footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
