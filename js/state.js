@@ -10,7 +10,7 @@ export const EMPTY = 0;
 export const BLOCK = 1;
 export const FILLED = 2;
 
-const DEFAULT_GRID_SIZE = 11;
+const DEFAULT_GRID_SIZE = 15;
 
 let grid = [];
 let gridSize = DEFAULT_GRID_SIZE;
